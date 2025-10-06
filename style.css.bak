@@ -147,12 +147,6 @@ body {
 .flower--6 { bottom: 9vmin; }
 .flower--7 { bottom: 11vmin; }
 .flower--8 { bottom: 9vmin; }
-.flower--9 {
-  bottom: 13vmin;
-  left: 75%;
-  transform: rotate(35deg) scale(0.92);
-  z-index: 13;
-}
 
 /* Reduce stem heights to converge like a bouquet and limit overlap */
 .flower--1 .flower__line { height: 56vmin; }
@@ -1265,46 +1259,6 @@ mask-image: linear-gradient(to top, transparent 40%, #079097 80%) !important;
 }
 
 /* remove ground foliage clusters (grass/effect groups) */
-
-.arc-images {
-  position: absolute;
-  left: 0; right: 0;
-  top: 7vh;
-  width: 100vw;
-  height: 22vh;
-  pointer-events: none;
-  z-index: 100;
-}
-.arc-image {
-  position: absolute;
-  width: 8vh;
-  height: 8vh;
-  object-fit: cover;
-  border-radius: 50%;
-  box-shadow: 0 2px 16px rgba(0,0,0,0.18);
-  background: #fff8;
-  transition: filter 0.2s;
-  filter: drop-shadow(0 1px 10px #0002);
-  will-change: transform;
-}
-
-
-.background-flowers {
-  position: fixed;
-  top: 0; left: 0; width: 100vw; height: 100vh;
-  pointer-events: none;
-  z-index: 1;
-}
-.bg-flower {
-  position: absolute;
-  width: 7vmin; height: 7vmin;
-  opacity: 0.7;
-  animation: rotate-bg-flower 12s linear infinite;
-}
-@keyframes rotate-bg-flower {
-  0% { transform: rotate(0deg) scale(1);}
-  100% { transform: rotate(360deg) scale(1);}
-}
 .flower__grass,
 .flower__g-long,
 .flower__g-right,
@@ -1314,12 +1268,3 @@ mask-image: linear-gradient(to top, transparent 40%, #079097 80%) !important;
 .growing-grass {
   display: none !important;
 }
-.flower--1 { left: 44%; transform: rotate(-13deg) scale(1.05); z-index: 15; }
-.flower--2 { left: 46%; transform: rotate(-7deg) scale(1.09); z-index: 16; }
-.flower--3 { left: 48%; transform: rotate(-2deg) scale(1.12); z-index: 17; }
-.flower--4 { left: 50%; transform: rotate(0deg) scale(1.14); z-index: 18; }
-.flower--5 { left: 52%; transform: rotate(2deg) scale(1.12); z-index: 17; }
-.flower--6 { left: 54%; transform: rotate(7deg) scale(1.09); z-index: 16; }
-.flower--7 { left: 56%; transform: rotate(13deg) scale(1.05); z-index: 15; }
-.flower--8 { left: 47%; transform: rotate(-9deg) scale(1.01); z-index: 14; }
-.flower--9 { left: 53%; transform: rotate(9deg) scale(1.01); z-index: 14; }
