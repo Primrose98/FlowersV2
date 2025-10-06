@@ -1227,12 +1227,28 @@ mask-image: linear-gradient(to top, transparent 40%, #079097 80%) !important;
   }
 }
 
-@media (max-width: 480px) {
-  .flowers {
-    transform: scale(0.48);
+/* Responsive adjustments for mobile */
+@media (max-width: 600px) {
+  body {
+    font-size: 13px;
+    min-height: 100vh;
+    padding: 0;
   }
-  .animation-wrapper.shrink .flowers {
-    transform: scale(0.26);
+  .animation-wrapper {
+    width: 100vw;
+    height: 100vh;
+    min-height: 100vh;
+    align-items: flex-end;
+    padding: 0;
+  }
+  .flowers {
+    width: 98vw;
+    height: 60vw;
+    transform: scale(1);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    padding: 0;
   }
   .message-section {
     padding: 1rem 0.8rem;
