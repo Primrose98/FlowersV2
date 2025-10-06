@@ -1229,26 +1229,51 @@ mask-image: linear-gradient(to top, transparent 40%, #079097 80%) !important;
 
 /* Responsive adjustments for mobile */
 @media (max-width: 600px) {
+}
+
+@media (max-width: 480px) and (orientation: portrait) {
   body {
-    font-size: 13px;
-    min-height: 100vh;
+    font-size: 11px;
+    min-height: 100svh;
     padding: 0;
   }
   .animation-wrapper {
     width: 100vw;
-    height: 100vh;
-    min-height: 100vh;
+    height: 100svh;
+    min-height: 100svh;
     align-items: flex-end;
     padding: 0;
   }
   .flowers {
-    width: 98vw;
-    height: 60vw;
-    transform: scale(1);
+    width: 100vw;
+    height: 60vh;
+    transform: scale(0.75);
     left: 0;
     right: 0;
     margin: 0 auto;
     padding: 0;
+  }
+  .flower {
+    left: 50%;
+    bottom: 4vmin;
+    transform: translateX(-50%) scale(0.7) !important;
+  }
+  .greeting, .teacher-name, .dedication {
+    font-size: 1.1em;
+    padding: 0 0.6em;
+    text-align: center;
+    word-break: break-word;
+  }
+  .message-section {
+    padding: 0.2em 0.1em;
+    margin-bottom: 0.5em;
+    max-width: 98vw;
+  }
+  .particles, .night {
+    width: 100vw !important;
+    height: 100svh !important;
+    left: 0 !important;
+    top: 0 !important;
   }
   .message-section {
     padding: 1rem 0.8rem;
